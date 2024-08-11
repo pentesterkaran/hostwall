@@ -1,0 +1,7 @@
+{
+    "BannedIpAddress" : ["10.0.0.1","192.23.121.2"],
+    "BannedPorts" : [8443],
+    "BannedSubnet" : ["127."],
+    "Timethreshold" : 10,
+    "BlockPingAttack" : "True"
+}
