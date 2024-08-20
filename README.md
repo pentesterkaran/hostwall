@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Firewall Rules Manager is a Python-based tool designed to load, manage, and apply firewall rules from JSON files. This project aims to simplify the process of managing firewall configurations and provide a robust interface for rule management.
+The hostWall is a Python-based tool designed to manage, and apply firewall rules from JSON files. This project aims to simplify the process of managing firewall configurations and provide a robust interface for rule management.
 
 ## Features
 
@@ -19,7 +19,7 @@ The Firewall Rules Manager is a Python-based tool designed to load, manage, and 
     git clone https://github.com/pentesterkaran/hostwall.git
     ```
 
-2. **Navigate to the project directory:**
+2. **Navigate to the hostwall directory:**
 
     ```bash
     cd hostwall
@@ -51,7 +51,7 @@ The Firewall Rules Manager is a Python-based tool designed to load, manage, and 
 2. **Start firewall**
 
 ```bash
-    sudo python3 fw.py
+sudo python3 fw.py
 
 ```
 
