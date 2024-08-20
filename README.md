@@ -1,4 +1,4 @@
-![firewall_logo](hhttps://github.com/pentesterkaran/hostwall/blob/main/logo/Hostwall.png)
+![firewall_logo](https://github.com/pentesterkaran/hostwall/blob/main/logo/Hostwall.png)
 
 ## Overview
 
