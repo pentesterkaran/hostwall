@@ -1,6 +1,4 @@
-# hostwall
-
-# Firewall Rules Manager
+![firewall_logo](https://github.com/pentesterkaran/hostwall/blob/main/asset/Hostwall.png)
 
 ## Overview
 
@@ -18,13 +16,13 @@ The Firewall Rules Manager is a Python-based tool designed to load, manage, and 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/firewall-rules-manager.git
+    git clone https://github.com/pentesterkaran/hostwall.git
     ```
 
 2. **Navigate to the project directory:**
 
     ```bash
-    cd firewall-rules-manager
+    cd hostwall
     ```
 
 3. **Install the required dependencies:**
@@ -37,58 +35,29 @@ The Firewall Rules Manager is a Python-based tool designed to load, manage, and 
 
 1. **Prepare your JSON rules file:**
 
-    Create a JSON file with your firewall rules. For example:
+    Add firewall rules in JSON file. For example:
 
     ```json
-    {
-        "rules": [
-            {
-                "action": "allow",
-                "protocol": "tcp",
-                "port": 80,
-                "source": "0.0.0.0/0"
-            },
-            {
-                "action": "deny",
-                "protocol": "tcp",
-                "port": 22,
-                "source": "192.168.1.1/32"
-            }
-        ]
+        {
+    "BannedIpAddress" : ["10.0.0.1","192.23.121.2"],
+    "BannedPorts" : [8443],
+    "BannedSubnet" : ["127."],
+    "Timethreshold" : 10,
+    "BlockPingAttack" : "True"
+
     }
     ```
 
-2. **Run the Firewall Rules Manager:**
+2. **Start firewall**
 
-    ```bash
-    python firewall_manager.py --load path/to/your/rules.json
-    ```
+```bash
+    sudo python3 fw.py
 
-    Use `--add`, `--remove`, and `--update` options to manage rules as needed.
-
-3. **Export rules to JSON format:**
-
-    ```bash
-    python firewall_manager.py --export path/to/save/rules.json
-    ```
-
-## Command-line Options
-
-- `--load <file>`: Load rules from a JSON file.
-- `--add <rule>`: Add a new rule.
-- `--remove <rule_id>`: Remove an existing rule by ID.
-- `--update <rule_id> <rule>`: Update an existing rule by ID.
-- `--export <file>`: Export the current rules to a JSON file.
+```
 
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request with your proposed changes.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or suggestions, please reach out to [your-email@example.com](mailto:your-email@example.com).
 
