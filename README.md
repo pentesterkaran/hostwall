@@ -28,7 +28,7 @@ The hostWall is a Python-based tool designed to manage, and apply firewall rules
 3. **Install the required dependencies:**
 
     ```bash
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 ## Usage
@@ -50,10 +50,10 @@ The hostWall is a Python-based tool designed to manage, and apply firewall rules
 
 2. **Start firewall**
 
-```bash
-sudo python3 fw.py
+    ```bash
+    sudo python3 fw.py
 
-```
+    ```
 
 ## Contributing
 
